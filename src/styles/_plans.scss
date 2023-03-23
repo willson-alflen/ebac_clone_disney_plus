@@ -1,0 +1,96 @@
+@use "variaveis";
+
+.plans {
+  padding: 5.6vw;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .chart {
+    &-grid {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 15px;
+
+      .header-row {
+        align-items: stretch;
+        border-bottom: 1px solid variaveis.$corTextoSecundario;
+        display: flex;
+        flex-direction: row;
+        padding-top: 84px;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        background-color: variaveis.$corDeFundo;
+
+        .feature-column-header {
+          width: 33%;
+        }
+
+        .chart-column-header {
+          width: 22%;
+          align-items: center;
+          display: flex;
+          flex: 1;
+          flex-direction: column;
+          justify-content: space-between;
+          padding: 30px 12px 20px;
+          position: relative;
+          text-align: center;
+          border-top: 2px solid variaveis.$corDaBorda;
+
+          p {
+            margin-bottom: 24px;
+          }
+
+          img {
+            height: auto;
+            width: 80%;
+          }
+        }
+      }
+
+      .feature-row {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          width: 100%;
+          height: 180px;
+          border-bottom: 1px solid variaveis.$corDaBordaLight;
+
+        .col1-item {
+          width: 33%;
+
+          p {
+            text-align: left;
+          }
+        }
+
+        .feature-cell {
+          width: 22%;
+          align-items: center;
+          box-sizing: border-box;
+          display: flex;
+          flex-wrap: wrap;
+          flex: 1;
+          text-align: center;
+
+          &-content {
+            height: 100%;
+            width: 100%;
+
+            span {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Disney+</title>
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- local css -->
+    <link rel="stylesheet" href="dist/css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="#" class="button button--secondary">SIGN UP NOW</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#" class="button button--dark">LOG IN</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero__content">
+            <div class="hero__content__branding">
+                <img src="./dist/images/disneyplus.svg" alt="Disney+">
+            </div>
+
+            <h3 class="title--small">
+                Enjoy the greatest stories, all in one place.
+            </h3>
+
+            <ul class="hero__content__combos">
+                <li class="hero__content__combos__combo">
+                    <img src="./dist/images/logos/disney_star_plus.png" alt="Disney+ - Star+ - Combo+">
+                    <button class="button">Sign up now</button>
+                    <span class="text">$ 45,90/month*</span>
+                </li>
+                <li class="hero__content__combos__combo">
+                    <img src="./dist/images/logos/disney_star_plus_lionsgate.png" alt="Disney+ - Star+ - Lionsgate">
+                    <button class="button">Sign up now</button>
+                    <span class="text">R$ 54,90/month*</span>
+                </li>
+            </ul>
+
+            <p class="text--small">
+                * The price may vary if billed through other platforms.
+            </p>
+        </div>
+    </section>
+    <section class="shows">
+        <nav class="shows__tabs">
+            <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active">
+                Comming soon
+            </button>
+            <button data-tab-button="populares" class="shows__tabs__button">
+                Most popular
+            </button>
+            <button data-tab-button="star_plus" class="shows__tabs__button">
+                More with Star+
+            </button>
+        </nav>
+        <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/desencantada.jpg" alt="Desencantada">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/lobisomem.jpg" alt="Lobisomem">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/sem_limites.jpg" alt="Sem limites">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/the_santa_clauses.jpg" alt="The Santa Clauses">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/willow.jpg" alt="Willow">
+            </li>
+        </ul>
+        <ul data-tab-id="populares" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/obi_wan.jpg" alt="Obi Wan">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/bluey.jpg" alt="Bluey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/cavaleira_da_lua.jpg" alt="Cavaleira da lua">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/o_incrivel_dr_pol.jpg" alt="O incrível dr. Pol">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/red.jpg" alt="Red">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/tudo_igual_sqn.jpg" alt="Tudo igual Sqn">
+            </li>
+        </ul>
+        <ul data-tab-id="star_plus" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/libertadores.jpg" alt="Libertadores">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/belair.jpg" alt="Belair">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/os_simpson.jpg" alt="Os Simpsons">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/premier_league.jpg" alt="Premier League">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/nba.jpg" alt="Nba">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/the_kardashians.jpg" alt="The Kardashians">
+            </li>
+        </ul>
+    </section>
+    <section class="plans">
+        <h2 class="title--big">Select your plan</h2>
+        <p class="text--big">Cancel anytime</p>
+
+        <div class="chart">
+            <div class="chart-grid">
+                <div class="header-row">
+                    <div class="feature-column-header"></div>
+
+                    <div class="chart-column-header">
+                        <p class="text--big">Disney+</p>
+                        <img src="./dist/images/disneyplus.svg" alt="Disney+">
+                        <div class="chart-column-header-footer">
+                            <button class="button">R$ 27,90/month*</button>
+                        </div>
+                    </div>
+
+                    <div class="chart-column-header">
+                        <p class="text--big">Combo+</p>
+                        <img src="./dist/images/logos/disney_star_plus.png" alt="Combo+">
+                        <div class="chart-column-header-footer">
+                            <button class="button">R$ 27,90/month*</button>
+                        </div>
+                    </div>
+
+                    <div class="chart-column-header">
+                        <p class="text--big">Star+ Disney+ <br> LIONSGATE+</p>
+                        <img src="./dist/images/logos/disney_star_plus_lionsgate.png" alt="Disney+ Star+ Lionsgate+">
+                        <div class="chart-column-header-footer">
+                            <button class="button">R$ 27,90/month*</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-row">
+                    <div class="col1-item">
+                        <p class="text">Annual price</p>
+                    </div>
+                    <div class="feature-cell">
+                        <div class="feature-cell-content">
+                            <p class="text">
+                                <span>279,90/year*</span>
+                                <span class="text">12 months for the price of 10</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-cell">
+                        <div class="feature-cell-content">
+                            <p class="text">
+                                <i class="fa-solid fa-minus"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-cell">
+                        <div class="feature-cell-content">
+                            <p class="text">
+                                <i class="fa-solid fa-minus"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-row">
+                    <div class="col1-item">
+                        <p class="text">
+                            Original series, classics and movies from Disney, Pixar, Marvel, Star Wars and National
+                            Geographic
+                        </p>
+                    </div>
+                    <div class="feature-cell">
+                        <div class="feature-cell-content">
+                            <p class="text">
+                                <i class="fa-solid fa-check"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-cell">
+                        <div class="feature-cell-content">
+                            <p class="text">
+                                <i class="fa-solid fa-check"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-cell">
+                        <div class="feature-cell-content">
+                            <p class="text">
+                                <i class="fa-solid fa-check"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-row">
+                    <div class="col1-item">
+                        <p class="text">
+                            Live sports from the world's best leagues and biggest tournaments from ESPN
+                        </p>
+                    </div>
+                    <div class="feature-cell">
+                        <div class="feature-cell-content">
+                            <p class="text">
+                                <i class="fa-solid fa-minus"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-cell">
+                        <div class="feature-cell-content">
+                            <p class="text">
+                                <i class="fa-solid fa-check"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-cell">
+                        <div class="feature-cell-content">
+                            <p class="text">
+                                <i class="fa-solid fa-check"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-row">
+                    <div class="col1-item">
+                        <p class="text">
+                            Local productions and award-winning TV shows, movies, and series exclusively on Star+
+                        </p>
+                    </div>
+                    <div class="feature-cell">
+                        <div class="feature-cell-content">
+                            <p class="text">
+                                <i class="fa-solid fa-minus"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-cell">
+                        <div class="feature-cell-content">
+                            <p class="text">
+                                <i class="fa-solid fa-check"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-cell">
+                        <div class="feature-cell-content">
+                            <p class="text">
+                                <i class="fa-solid fa-check"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-row">
+                    <div class="col1-item">
+                        <p class="text">
+                            Stream up to 4 different devices at once
+                        </p>
+                    </div>
+                    <div class="feature-cell">
+                        <div class="feature-cell-content">
+                            <p class="text">
+                                <span>4</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-cell">
+                        <div class="feature-cell-content">
+                            <p class="text">
+                                <span>4 + 4</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-cell">
+                        <div class="feature-cell-content">
+                            <p class="text">
+                                <span>4 + 4 + 4</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-row">
+                    <div class="col1-item">
+                        <p class="text">
+                            Download and watch your favorites without connection or delays
+                        </p>
+                    </div>
+                    <div class="feature-cell">
+                        <div class="feature-cell-content">
+                            <p class="text">
+                                <span class="fa-solid fa-check"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-cell">
+                        <div class="feature-cell-content">
+                            <p class="text">
+                                <span class="fa-solid fa-check"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-cell">
+                        <div class="feature-cell-content">
+                            <p class="text">
+                                <span class="fa-solid fa-check"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-row">
+                    <div class="col1-item">
+                        <p class="text">
+                            Create personalized profiles within your account
+                        </p>
+                    </div>
+                    <div class="feature-cell">
+                        <div class="feature-cell-content">
+                            <p class="text">
+                                <span>7</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-cell">
+                        <div class="feature-cell-content">
+                            <p class="text">
+                                <span>7 + 7</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-cell">
+                        <div class="feature-cell-content">
+                            <p class="text">
+                                <span>7 + 7 + 5</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-row">
+                    <div class="col1-item">
+                        <p class="text">
+                            Protect your family with parental controls
+                        </p>
+                    </div>
+                    <div class="feature-cell">
+                        <div class="feature-cell-content">
+                            <p class="text">
+                                <span class="fa-solid fa-check"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-cell">
+                        <div class="feature-cell-content">
+                            <p class="text">
+                                <span class="fa-solid fa-check"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-cell">
+                        <div class="feature-cell-content">
+                            <p class="text">
+                                <span class="fa-solid fa-check"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chart-bottom">
+                    <p class="text" style="text-align: left; margin-top: 24px;">* The price may vary if billed through other platforms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="image-text-section">
+        <img src="./dist/images/tv_pc_tablet_celular.png" alt="Imagem com TV, Computador, tablet e celular">
+        <div class="image-text-section__text_container">
+            <h2 class="title">Watch the way you want</h2>
+            <p class="text--big">
+                Enjoy the big screen experience on your TV, or watch on your tablet, laptop, phone and more. You can
+                watch an ever-growing selection of titles in 4K. Plus, you can stream on 4 screens at once, so
+                everyone’s happy.
+            </p>
+        </div>
+    </section>
+    <section class="image-text-section image-text-section--image-full-width">
+        <picture>
+            <source media="(max-width: 768px)" srcset="./dist/images/fundo_rei_leao_celular.png" />
+            <img src="./dist/images/fundo_rei_leao.png" alt="Rei Leão">
+        </picture>
+        <div class="image-text-section__text_container image-text-section--image-full-width__text_container">
+            <h2 class="title">Download any series or movie</h2>
+            <p class="text--big">
+                Download whatever you want and watch whenever you want. Your favorites will always stay with you, even
+                if your Wi-Fi won’t.
+            </p>
+        </div>
+    </section>
+    <section class="available-devices">
+        <h2 class="title">Available on your favorite devices</h2>
+        <ul class="available-devices__list">
+            <li class="available-devices__list__item">
+                <img src="./dist/images/dispositivos/computador.png" alt="Computador">
+                <h4 class="title--small">Computer</h4>
+                <ul class="text">
+                    <li>Chrome OS</li>
+                    <li>MacOS</li>
+                    <li>Windows PC</li>
+                </ul>
+            </li>
+            <li class="available-devices__list__item">
+                <img src="./dist/images/dispositivos/tv.png" alt="Computador">
+                <h4 class="title--small">TV</h4>
+                <ul class="text">
+                    <li>Amazon Fire TV</li>
+                    <li>Android TV</li>
+                    <li>Apple TV</li>
+                    <li>Chromecast</li>
+                    <li>TVs LG</li>
+                    <li>Roku</li>
+                    <li>Samsung</li>
+                </ul>
+            </li>
+            <li class="available-devices__list__item">
+                <img src="./dist/images/dispositivos/videogames.png" alt="Computador">
+                <h4 class="title--small">Game Consoles</h4>
+                <ul class="text">
+                    <li>PS4</li>
+                    <li>PS5</li>
+                    <li>Xbox One</li>
+                    <li>Xbox Series X</li>
+                    <li>Xbox Series S</li>
+                </ul>
+            </li>
+            <li class="available-devices__list__item">
+                <img src="./dist/images/dispositivos/celular.png" alt="Computador">
+                <h4 class="title--small">Mobile & Tablets</h4>
+                <ul class="text">
+                    <li>Amazon Fire Tablets</li>
+                    <li>Android Phones & Tablets</li>
+                    <li>iPhone & iPad</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <section class="faq">
+        <h2 class="title">Frequently Asked Questions</h2>
+        <ul class="faq__questions">
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    What is Disney+?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    <p>With Disney+, you get:</p>
+                    <ul>
+                        <li>Exclusive entertainment experience.</li>
+                        <li>The greatest stories of Disney, Pixar, Marvel, Star Wars, and National Geographic, all in
+                            one place.</li>
+                        <li>GroupWatch, a way to watch Disney+ together, even when you’re apart.</li>
+                        <li>Unlimited downloads on up to 10 devices.</li>
+                        <li>Over 300 titles in 4K UHD and HDR.</li>
+                        <li>Up to 4 current streams. </li>
+                        <li>IMAX Enhanced. Available with certain Marvel titles and accessible on all devices where
+                            Disney+ is supported.</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Do you already have a Disney+ or Star+ subscription but want Combo+?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    <p>With Combo+:</p>
+                    <ul>
+                        <li>We will discount the value of your existing subscription to the Combo+ deal. (Yes, for the
+                            annual plan as well!)</li>
+                        <li>If you have a monthly subscription, your monthly bill will be reduced to the Combo+ price.
+                        </li>
+                        <li>If you have an annual subscription, we will divide your annual price into 12 equal parts and
+                            discount the monthly price to the Combo+ monthly payment.</li>
+                        <li>A detailed email with all of the payment charges and deductions will be sent to your inbox
+                            as soon as you confirm your Combo+ payment method.</li>
+                        <li>Remember you can cancel at any moment. </li>
+                    </ul>
+                    <p>The Combo+ subscription is only offering a monthly plan at this moment.</p>
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    What payment methods can I use?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    <p>You can pay with a credit card, debit card, PayPal, Mercado Pago or also through third parties
+                        such as Google Play Store, Apple App Store; Mercado Livre and local TV, telephone and internet
+                        providers.</p>
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    How can I stream the new 16+ and 18+ content?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    <p>Disney+ subscribers in Latin America will need to update the parental controls on their profile
+                        in order to access to the full catalog that includes 16+ and 18+ content. Users are able to
+                        restrict content in each profile as well as add a lock PIN. If you are a subscriber and you
+                        prefer to keep your current parental settings, you will enjoy all Disney+ content in a 14+
+                        environment, and you will have the option to modify parental controls in the “edit profile”
+                        section any time.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
+            <ul class="footer__links">
+                <li class="footer__links__item">
+                    <div class="language-selector">
+                        <img src="./dist/images/icones/globe.svg" alt="Globo do mundo">
+                        <select>
+                            <option>English</option>
+                            <option selected>Português</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Terms of Use</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="" class="text--small">Privacy Policy</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Data Protection in Brazil</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Interest-Based Ads</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="" class="text--small">
+                        Supported Devices
+                    </a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Help Centre</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="" class="text--small">About us</a>
+                </li>
+            </ul>
+            <p class="text--small">
+                © ️2023 Disney, Disney+ and The Walt Disney Company. All rights reserved. Paid subscription service.
+                Content is subject to availability.
+            </p>
+            <p class="text--small">
+                Disney+ is a paid service, based on subscription and subject to terms and conditions. The Disney+
+                service is marketed by The Walt Disney Company (Brazil) Ltda., World Trade Center, Av. Das Nações
+                Unidas, 12.551, 12.555, 12.559, Piso 10, São Paulo / SP - CEP 04578-903, Brazil and CNPJ / M 73.042.962
+                / 0004-20
+            </p>
+        </div>
+    </footer>
+
+
+
+    <script src="./dist/js/main.js"></script>
+</body>
+
+</html>
