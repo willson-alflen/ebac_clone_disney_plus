@@ -1,5 +1,5 @@
 {
-  "name": "clone_disneyplus",
+  "name": "disneyplus_clone",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,17 +8,9 @@
     "build": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ogiansouza/clone_disneyplus.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ogiansouza/clone_disneyplus/issues"
-  },
-  "homepage": "https://github.com/ogiansouza/clone_disneyplus#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-imagemin": "^7.1.0",
